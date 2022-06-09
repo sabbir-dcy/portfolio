@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Contact from '../components/Contact'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects'
+import Skills from '../components/Skills'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <main className='mb-20'>
         <Hero />
+        <Skills />
         <Projects />
         <Contact />
       </main>
