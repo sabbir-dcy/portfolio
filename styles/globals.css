@@ -1,16 +1,27 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'poppins', sans-serif;
+  font-size: 14px;
+  background-color: rgb(253, 253, 253);
+  scroll-behavior: smooth;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: 'ogg';
+  src: url('/font/OggRegular.ttf') format('truetype');
+  font-weight: 400;
 }
-
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: 'ogg';
+  src: url('/font/OggRegular.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'hacky';
+  src: url('/font/Hacky\ Demo.ttf') format('truetype');
 }
