@@ -10,7 +10,7 @@ const Hero = () => {
         <h2 className='font-ogg text-7xl '>Full Stack Developer</h2>
         <div className='mt-5 space-x-2'>
           <Link href='#contact'><button className='bg-black text-white w-36 py-3 hover:bg-zinc-800'>hire</button></Link>
-          <Link href='/resume' ><button className='bg-zinc-100 w-36 py-3 font-medium hover:bg-zinc-200'>resume</button></Link>
+          <Link href='https://drive.google.com/file/d/1KWd2o6qEJYFADNWjh0MzKI1Ujd7QO4Bf/view?usp=sharing' ><a target='_blank'><button className='bg-zinc-100 w-36 py-3 font-medium hover:bg-zinc-200'>resume</button></a></Link>
         </div>
       </div>
       <div className='md:w-[400px] bg-black text-white p-12 relative'>

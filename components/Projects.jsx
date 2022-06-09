@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 const Projects = () => {
   return (
-    <div id='projects' className='my-24'>
-      <h2 className='mb-16 font-ogg text-7xl text-center'>Sample Projects</h2>
+    <div id='projects' className='my-36'>
+      <h2 className='mb-24 font-ogg text-7xl text-center'>Sample Projects</h2>
       <div className="mt-12 gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
         <div>
           <h2 className='text-4xl font-ogg border-l-4 ml-2 px-2 border-black'>Tsushima Production</h2>
