@@ -26,11 +26,13 @@ const Slug = ({ data: project }) => {
 
 export async function getServerSideProps(context) {
   const name = context.query.Slug
-  const res = await fetch(`https://portfolio-three-zeta-22.vercel.app/projects/?name=${name}`)
+  const res = await fetch(`http://portfolio-three-zeta-22.vercel.app/api/projects/?name=${name}`)
   const data = await res.json()
   return {
     props: { data },
+
   }
+
 }
 
 export default Slug
