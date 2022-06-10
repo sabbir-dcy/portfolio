@@ -6,8 +6,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        ogg: "'ogg' , sans-serif",
+        ogg: "'ogg' , serif",
         hacky: "'hacky' , sans-serif",
+        jam: "'jam' , sans-serif",
+        garet: "'garet' , sans-serif",
       },
     },
   },

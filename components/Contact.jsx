@@ -11,18 +11,18 @@ const Contact = () => {
     }).catch((err) => console.log(err));
   }
   return (
-    <div id='contact' className='lg:w-1/4 md:w-3/5 w-4/5 mx-auto'>
-      <h2 className='text-4xl font-ogg text-center'>Let us talk</h2>
+    <div id='contact' className='lg:w-4/12 md:w-3/5 w-4/5 mx-auto'>
+      <h2 className='text-4xl font-garet text-center '>let us talk</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='flex flex-col mt-2'>
           <label htmlFor="name">Name</label>
-          <input type="text" className='border-b-2 border-black outline-none w-full p-2' {...register('name', {
+          <input type="text" className='border-b border-black outline-none w-full p-2' {...register('name', {
             required: 'name is required'
           })} />
         </div>
         <div className='flex flex-col mt-2'>
           <label htmlFor="email">Email</label>
-          <input type="email" className='border-b-2 border-black outline-none w-full p-2' {...register('email', {
+          <input type="email" className='border-b border-black outline-none w-full p-2' {...register('email', {
             required: 'email is required',
             pattern: {
               value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
@@ -32,7 +32,7 @@ const Contact = () => {
         </div>
         <div className='flex flex-col mt-2'>
           <label htmlFor="message">Message</label>
-          <textarea type="message" className='border-b-2 border-black outline-none w-full p-2' {...register('message', {
+          <textarea type="message" className='border-b border-black outline-none w-full p-2' {...register('message', {
             required: 'message is required'
           })} />
         </div>
