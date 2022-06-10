@@ -5,15 +5,18 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Projects = () => {
   const projects = [{
+    name: 'tsushima-production',
     thumb: '/image/project1_ss.png',
     link: 'https://tsushima-corporation.web.app',
     bg: 'bg-purple-200',
     _id: '001'
   }, {
+    name: 'offshore-stockroom',
     thumb: '/image/project2_ss.png',
     link: 'https://offshore-stockroom.web.app',
     bg: 'bg-orange-200', _id: '002'
   }, {
+    name: 'font-bey',
     thumb: '/image/project3_ss.png',
     link: 'https://fontbey.netlify.app/',
     bg: 'bg-blue-200', _id: '003'
@@ -25,7 +28,7 @@ const Projects = () => {
       <div className="mt-12 gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
         {
           projects.map((project) => <div key={project._id} className='relative'>
-            <h2 className='text-4xl font-ogg border-l-4 ml-2 mb-2 px-2 border-black'>Tsushima Production</h2>
+            <h2 className='text-4xl font-ogg border-l-4 ml-2 mb-2 px-2 border-black'>{project.name}</h2>
 
             <div className={`group w-fit relative overflow-hidden`}>
               <div className='w-[320px] h-[400px] relative transition-all ease-out duration-300 cursor-pointer border border-black '>
@@ -34,13 +37,12 @@ const Projects = () => {
               <div className='bg-black text-white absolute top-full h-full w-full group-hover:top-0 transition-all ease-out duration-500 p-8 gap-y-4 flex flex-col'>
                 <h2>Manufacturer website</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod illum libero quibusdam doloribus ea repudiandae eos ipsum vitae, rerum unde.</p>
-                <button className='w-12 h-12 rounded-full border text-2xl flex justify-center items-center mt-20 mx-auto'>
-                  <Link href={project.link}>
-                    <a target={'_blank'}>
-                      <AiOutlineArrowRight />
-                    </a>
+                <div className='flex justify-center mt-8'>
+                  <Link href={`/projects/${project.name}`}>
+                    <button className='w-12 h-12 rounded-full border border-white text-2xl flex justify-center items-center mt-8'><AiOutlineArrowRight /></button>
                   </Link>
-                </button>
+                </div>
+
 
               </div>
             </div>
