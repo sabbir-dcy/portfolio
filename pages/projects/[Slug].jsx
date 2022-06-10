@@ -13,7 +13,7 @@ const Slug = ({ data: project }) => {
         </a></Link>
       </div>
       <div className=''>
-        <h2 className='text-2xl mb-4'>Project Details</h2>
+        <h2 className='text-3xl mb-4'>Project Details</h2>
         {project.desc.map((feature, index) => <div key={index}>
           <p className='mt-2'>
             {feature.feature}
