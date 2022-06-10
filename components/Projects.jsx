@@ -6,18 +6,22 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const Projects = () => {
   const projects = [{
     name: 'tsushima-production',
+    title: 'manufacturer website',
     thumb: '/image/project1_ss.png',
+    short_desc: 'A website of a bicycle parts manufacturing company. ',
     link: 'https://tsushima-corporation.web.app',
     bg: 'bg-purple-200',
     _id: '001'
   }, {
-    name: 'offshore-stockroom',
+    name: 'offshore-stockroom', title: 'warehouse management website',
     thumb: '/image/project2_ss.png',
+    short_desc: 'A website of warehouse management company',
     link: 'https://offshore-stockroom.web.app',
     bg: 'bg-orange-200', _id: '002'
   }, {
-    name: 'font-bey',
+    name: 'font-bey', title: 'font searching website',
     thumb: '/image/project3_ss.png',
+    short_desc: 'A website for searching different fonts for web',
     link: 'https://fontbey.netlify.app/',
     bg: 'bg-blue-200', _id: '003'
   }]
@@ -35,8 +39,8 @@ const Projects = () => {
                 <Image src={project.thumb} layout='fill' alt='project2' />
               </div>
               <div className='bg-black text-white absolute top-full h-full w-full group-hover:top-0 transition-all ease-out duration-500 p-8 gap-y-4 flex flex-col'>
-                <h2>Manufacturer website</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod illum libero quibusdam doloribus ea repudiandae eos ipsum vitae, rerum unde.</p>
+                <h2>{project.title}</h2>
+                <p>{project.short_desc}</p>
                 <div className='flex justify-center mt-8'>
                   <Link href={`/projects/${project.name}`}>
                     <button className='w-12 h-12 rounded-full border border-white text-2xl flex justify-center items-center mt-8'><AiOutlineArrowRight /></button>

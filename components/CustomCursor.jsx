@@ -19,9 +19,11 @@ const CustomCursor = () => {
     })
   }, [])
   return (
-    <><div className={styles.cursor} ref={cursorRef}>
-    </div>
-      <div className={styles.cursor__s} ref={cursorSRef}></div></>
+    <>
+      <div className={styles.cursor} ref={cursorRef}>
+      </div>
+      <div className={styles.cursor__s} ref={cursorSRef}></div>
+    </>
   )
 }
 

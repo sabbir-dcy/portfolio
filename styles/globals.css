@@ -7,9 +7,6 @@ html {
   cursor: none;
 }
 
-button,a {
-  cursor: none;
-}
 body {
   font-family: 'poppins', sans-serif;
   font-size: 14px;

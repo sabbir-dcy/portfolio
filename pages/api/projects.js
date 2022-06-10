@@ -59,7 +59,12 @@ export default async function handler(req, res) {
       name: 'font-bey',
       title: 'font searching website',
       link: 'https://fontbey.netlify.app/',
-      desc: [{ feature: 'hello world' }],
+      desc: [
+        {
+          feature:
+            'Search google fonts. Search fonts by category also possible. Can copy single font url for css or user can add multipe fonts link to cart. Then copy the merged url',
+        },
+      ],
       bg: 'bg-blue-200',
       _id: '003',
     },

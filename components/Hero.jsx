@@ -14,11 +14,12 @@ const Hero = () => {
         </div>
       </div>
       <div className='md:w-[400px] bg-black text-white p-12 relative'>
-        <div className='absolute w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:-top-20 md:-left-20 -top-12 -right-12 transition-all ease-out duration-500 hover:w-[200px] hover:h-[200px]'>
-          <Image className='rounded-full' src='/image/dp.png' alt='dp' layout='fill' />
+        <div className='group absolute w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:-top-20 md:-left-20 -top-12 -right-12 transition-all ease-out duration-500 hover:w-[200px] hover:h-[200px] overflow-hidden rounded-full'>
+          <Image className='grayscale group-hover:grayscale-0 delay-300' src='/image/dp.png' alt='dp' layout='fill' />
+          <div className='w-full h-full bg-black absolute -left-full group-hover:left-full transition-all duration-[800ms]'></div>
         </div>
-        <h2 className='text-4xl font-ogg mb-2'>About Me</h2>
-        <p>Hi! I am Sabbir Ahmed, a mern stack developer with 1 year of experince in web development field. My area of expertise are react, node, tailwind, firebase and mongodb</p>
+        <h2 className='text-4xl font-ogg mb-2'>Hi!</h2>
+        <p>I am Sabbir Ahmed, a mern stack developer with 1 year of experince in web development field. My area of expertise are react, node, tailwind, firebase and mongodb</p>
       </div>
     </div>
   )

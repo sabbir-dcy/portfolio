@@ -32,7 +32,6 @@ export async function getServerSideProps(context) {
     props: { data },
 
   }
-
 }
 
 export default Slug
