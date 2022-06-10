@@ -59,7 +59,7 @@ export default async function handler(req, res) {
       name: 'font-bey',
       title: 'font searching website',
       link: 'https://fontbey.netlify.app/',
-      desc: [{feature:''}],
+      desc: [{ feature: 'hello world' }],
       bg: 'bg-blue-200',
       _id: '003',
     },
