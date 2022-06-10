@@ -12,7 +12,7 @@ const Resume = ({ data }) => {
 
 
 export async function getServerSideProps(context) {
-  const res = await fetch('https://portfolio-three-zeta-22.vercel.app/resume/')
+  const res = await fetch('https://portfolio-three-zeta-22.vercel.app/api/resume/')
   const data = await res.json()
 
   return {
