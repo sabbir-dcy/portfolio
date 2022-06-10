@@ -14,6 +14,7 @@ const Navbar = () => {
       <div className='space-x-12'>
         <Link href={'/'} ><a className={`${pathname === '/' && ' border-b-2 border-black'} `}>Home</a></Link>
         <Link href={'/about'}><a className={`${pathname === '/about' && ' border-b-2 border-black'} `}>About</a></Link>
+        <Link href={'/blog'}><a className={`${pathname === '/blog' && ' border-b-2 border-black'} `}>Blog</a></Link>
       </div>
     </div>
   )
