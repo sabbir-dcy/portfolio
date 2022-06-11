@@ -1,12 +1,14 @@
 import CustomCursor from '../components/CustomCursor'
 import Layer from '../components/Layer'
 import '../styles/globals.css'
-
-function MyApp({ Component, pageProps }) {
+import { AnimatePresence } from 'framer-motion'
+function MyApp({ Component, pageProps, router }) {
   return (
     <Layer>
       <CustomCursor />
-      <Component {...pageProps} />
+      <AnimatePresence exitBeforeEnter initial={false}>
+        <Component {...pageProps} key={router.route} />
+      </AnimatePresence>
     </Layer>
   )
 }

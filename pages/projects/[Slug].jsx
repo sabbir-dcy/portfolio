@@ -1,10 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import { AiOutlineArrowRight } from "react-icons/ai";
-
+import { motion } from 'framer-motion'
 const Slug = ({ data: project }) => {
   return (
-    <div className='grid grid-cols-2 my-20 '>
+    <motion.div className='grid grid-cols-2 my-20 ' initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: .5, ease: "easeInOut" }}>
       <div>
         <h2 className='text-7xl font-ogg'>{project.name}</h2>
         <h3 className='text-2xl'>{project.title}</h3>
@@ -20,7 +23,7 @@ const Slug = ({ data: project }) => {
           </p>
         </div>)}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

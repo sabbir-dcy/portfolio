@@ -1,10 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <div className='grid grid-cols-1 lg:grid-cols-2 min-h-[80vh] items-center justify-items-center relative gap-y-32'>
+    <motion.div className='grid grid-cols-1 lg:grid-cols-2 min-h-[80vh] items-center justify-items-center relative gap-y-32' initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: .2, ease: "easeOut" }}>
       <div className='text-center lg:text-left'>
         <h1 className='text-lg mb-2 bg-black text-white px-[3px] w-fit '>Sabbir Ahmed</h1>
         <h2 className='font-ogg text-7xl '>Full Stack Developer</h2>
@@ -21,7 +24,7 @@ const Hero = () => {
         <h2 className='text-4xl font-ogg mb-2'>Hi!</h2>
         <p>I am Sabbir Ahmed, a mern stack developer with 1 year of experince in web development field. My area of expertise are react, node, tailwind, firebase and mongodb</p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

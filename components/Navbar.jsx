@@ -8,7 +8,7 @@ const Navbar = () => {
   console.log()
   return (
     <div className='h-24 flex justify-between items-center'>
-      <div className='w-10 h-10 border border-black font-medium rounded-full flex justify-center items-center'>
+      <div className='w-10 h-10 border border-black font-medium rounded-full flex justify-center items-center hover:bg-black hover:text-white transition-colors duration-300'>
         SA
       </div>
       <div className='space-x-12'>

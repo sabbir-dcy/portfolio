@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import styles from './Cursor.module.css'
 
 const CustomCursor = () => {
@@ -20,7 +20,7 @@ const CustomCursor = () => {
   }, [])
   return (
     <>
-      <div className={styles.cursor} ref={cursorRef}>
+      <div className={`${styles.cursor}`} ref={cursorRef}>
       </div>
       <div className={styles.cursor__s} ref={cursorSRef}></div>
     </>
